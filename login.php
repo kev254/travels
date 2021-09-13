@@ -7,16 +7,16 @@ if(isset($_POST['submit'])){
     $username = mysqli_real_escape_string($con,strtolower($_POST['username']));
     $password = mysqli_real_escape_string($con,$_POST['password']);
     
-    if($username == "srizon" && $password == "srizon"){
+    if($username == "liz" && $password == "liz123"){
         $_SESSION['username'] = $username;
         $_SESSION['role'] = "admin";
-        header('Location: all-rooms.php');
+        header('Location: rooms.php');
     }
     else{
         $error = "Wrong Username or Password";
     }
 }
-require_once('header.php');
+require_once('header-admin.php');
 ?>
 
 

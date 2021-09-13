@@ -143,4 +143,3 @@
             </div>
         </div>
 
-<?php require_once('footer-admin.php');?>
